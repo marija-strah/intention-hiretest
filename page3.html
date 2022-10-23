@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Test - Page 3</title>
+
+    <link rel="icon" type="image/png" href="./images/logo-int.png"/>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <!-- <script defer type="text/javascript" src="./js/main.js"></script> -->
+    <script defer type="text/javascript" src="./js/page3.js"></script>
+    <script defer type="text/javascript" src="./js/headerAndFooter.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+
+    <section class="map-overlay">
+        <!-- <img src="./images/ic-pin-map.png"/> -->
+        <div id="page3-header-text">
+            <h2>Best watches in the World</h2>
+            <p>Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+        
+    </section>
+
+    <img class="path2" src="./images/Path 2.png"/>
+
+    <section class="filter-table">
+
+        <div class="dynamic-filters">
+
+        <div class="country-filters">
+            <button class="all" data-filter="*" onclick = filterStores(event)>ALL</button>
+            <button class="filter-buttons" data-filter="serbia" onclick = filterStores(event)>SERBIA</button>
+            <button class="filter-buttons" data-filter="germany" onclick = filterStores(event)>GERMANY</button>
+        </div>
+
+        <div class="store-type-filters">
+            <button class="filter-buttons" data-filter="franchise" onclick = filterStores(event)>FRANCHISE</button>
+            <button class="filter-buttons" data-filter="store" onclick = filterStores(event)>STORE</button>
+            <button class="filter-buttons" data-filter="small-dealers" onclick = filterStores(event)>SMALL DEALERS</button>
+        </div>
+
+    </div>
+
+        <table id="store-table">
+            <tbody id="append-here">
+            <tr>
+                <th>Country</th>
+                <th>Names</th>
+                <th>Phone</th>
+                <th class="address-th">Address</th>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <img class="path2" src="./images/Path 2.png"/>
+
+    <section class="map-box page3-bottom">
+        <h2>Best watches in the World</h2>
+            <p>Maecenas faucibus mollis interdum risus, porta ac consectetur ac.</p>
+            <a href="./page3.html"><button class="cta-button">see on Google map</button></a>
+    </section>
+
+    <footer id="footer"></footer>
+</body>
+</html>
